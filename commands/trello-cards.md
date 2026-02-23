@@ -10,9 +10,10 @@ Show cards quickly with minimal token usage.
 
 ## Instructions
 
-1. If the user specified a board/list in arguments, find it. Otherwise ask which board and list they want.
-2. Use `get_cards_by_list` with default fields (token-efficient — no descriptions returned)
-3. Present cards in a compact list: name, due date (if set), labels, members
-4. If they want full details on a specific card, tell them to ask and you'll fetch it with fields='all'
+1. Check if a `.trello-board` file exists in the project root — if so, use that board ID as the default board
+2. If the user specified a board/list in arguments, find it. Otherwise use the default board, or ask which board and list they want.
+3. Use `get_cards_by_list` with default fields (token-efficient — no descriptions returned)
+4. Present cards in a compact list: name, due date (if set), labels, members
+5. If they want full details on a specific card, tell them to ask and you'll fetch it with fields='all'
 
 $ARGUMENTS
