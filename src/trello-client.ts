@@ -42,7 +42,9 @@ export class TrelloClient {
       } else {
         message = `Trello API error (${status}): ${err.response?.data ?? err.message}`;
       }
-      const error: TrelloError = { status, message, endpoint };
+      const error = new Error(message) as Error & TrelloError;
+      error.status = status;
+      error.endpoint = endpoint;
       throw error;
     }
   }

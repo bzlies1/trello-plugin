@@ -1,6 +1,6 @@
 {
   "name": "trello",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Token-efficient Trello management for Claude Code. 35 MCP tools covering boards, lists, cards, checklists, comments, attachments, labels, custom fields, and search — all with smart field filtering to minimize token usage.",
   "author": {
     "name": "bzlies"
