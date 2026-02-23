@@ -1,10 +1,12 @@
 {
-  "trello": {
-    "command": "node",
-    "args": ["${CLAUDE_PLUGIN_ROOT}/dist/index.js"],
-    "env": {
-      "TRELLO_API_KEY": "${TRELLO_API_KEY}",
-      "TRELLO_TOKEN": "${TRELLO_TOKEN}"
+  "mcpServers": {
+    "trello": {
+      "command": "npx",
+      "args": ["@bzlies1/trello-mcp-server"],
+      "env": {
+        "TRELLO_API_KEY": "${TRELLO_API_KEY}",
+        "TRELLO_TOKEN": "${TRELLO_TOKEN}"
+      }
     }
   }
 }
